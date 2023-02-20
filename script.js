@@ -30,8 +30,6 @@ function drawCards(dataArray) {
   dataArray.forEach((data) => {
     const cardWrapper = document.createElement("div");
     cardWrapper.classList.add("card-wrapper");
-    cardWrapper.style.cssText =
-      "padding: 15px; font-size: 1.4em; background-color: rgb(229, 229, 229); border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.329) 0 0 10px;";
 
     const avatarWrapper = document.createElement("div");
 
@@ -53,8 +51,5 @@ function drawCards(dataArray) {
     cardWrapper.append(avatarWrapper, loginWrapper);
 
     document.getElementById("output").append(cardWrapper);
-
-    document.getElementById("output").style.cssText =
-      "display: flex; flex-wrap: wrap; justify-content: center; text-align: center; gap: 15px;";
   });
 }
